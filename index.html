@@ -384,7 +384,7 @@
                 errorMessage.style.display = 'none';
                 
                 // Lakukan request ke API
-                fetch(`https://hookrest.my.id/download/tiktok?url=${encodeURIComponent(tiktokUrl)}`)
+                fetch(`https://fastapi.acodes.my.id/api/downloader/tiktok?url=${encodeURIComponent(tiktokUrl)}`)
                     .then(response => response.json())
                     .then(data => {
                         loadingElement.style.display = 'none';
@@ -481,3 +481,4 @@
 </body>
 
 </html>
+
